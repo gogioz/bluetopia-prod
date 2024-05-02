@@ -1,0 +1,33 @@
+.slide-animation {
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-animation-start {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.text-animation {
+  transition: transform 0.5s ease-in-out;
+}
+
+.text-animation.slide-animation-start {
+  animation: slideInFromRight 2s ease-in-out;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,29 @@
+.activity-title::before {
+  content: "على الطريق";
+  color: #01516e;
+  display: block;
+  font-weight: 700;
+  z-index: -2;
+  height: 0rem;
+  /* font-size: 50px; */
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 280px) {
+  .activity-title::before {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 786px) {
+  .activity-title::before {
+    font-size: 70px;
+    height: 1rem;
+  }
+}
+
+@media (min-width: 1730px) {
+  .activity-title::before {
+    font-size: 80px;
+  }
+}

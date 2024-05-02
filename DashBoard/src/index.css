@@ -1,0 +1,57 @@
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  }
+}
+
+@font-face {
+  font-family: Camel-ExtraBold;
+  src: url("./fonts/alfont_com_TheYearofTheCamel-ExtraBold.otf")
+    format("opentype");
+  /* Add additional font properties if needed */
+}
+
+@font-face {
+  font-family: Camel-Bold;
+  src: url("./fonts/alfont_com_TheYearofTheCamel-Bold.otf") format("opentype");
+  /* Add additional font properties if needed */
+}
+
+@font-face {
+  font-family: Camel-Regular;
+  src: url("./fonts/alfont_com_TheYearofTheCamel-Regular.otf")
+    format("opentype");
+  /* Add additional font properties if needed */
+}
+
+@font-face {
+  font-family: Camel-Medium;
+  src: url("./fonts/alfont_com_TheYearofTheCamel-Medium.otf") format("opentype");
+  /* Add additional font properties if needed */
+}
+
+@font-face {
+  font-family: Camel-ExtraLight;
+  src: url("./fonts/alfont_com_TheYearofTheCamel-ExtraLight.otf")
+    format("opentype");
+  /* Add additional font properties if needed */
+}
+@font-face {
+  font-family: Camel-Light;
+  src: url("./fonts/alfont_com_TheYearofTheCamel-Light.otf") format("opentype");
+  /* Add additional font properties if needed */
+}
+@font-face {
+  font-family: Camel-Thin;
+  src: url("./fonts/alfont_com_TheYearofTheCamel-Thin.otf") format("opentype");
+  /* Add additional font properties if needed */
+}
+
+@tailwind components;
+@tailwind utilities;
