@@ -51,18 +51,20 @@ function Article(lang) {
           alt=""
           className="xs:w-[100%]  xl:w-[50%] xs:px-2 md:px-4"
         />
-        <div className="xs:py-4 xs:px-2 xl:px-10 xl:py-6  flex flex-col justify-center items-center   text-white">
+        <div
+          className={`xs:py-4 xs:px-2 md:px-4 xl:px-20 xl:py-6  flex flex-col justify-center ${
+            language === "ar" ? "items-end" : "items-start"
+          }    text-white`}
+        >
           <h5
-            className={`xs:text-2xl xs:font-Camel-Bold  text-[#063242] lg:text-4xl xl:text-5xl lg:font-Camel-Bold ${
-              language === "ar" ? "self-end pl-24" : "self-start "
-            } ${language === "ar" ? "pr-3" : "pl-3"}`}
+            className={`xs:text-2xl xs:font-Camel-Bold  text-[#063242] lg:text-4xl xl:text-5xl lg:font-Camel-Bold `}
             dir={language === "ar" ? "rtl" : ""}
           >
             {language === "ar" ? subTitleTrans : subTitle}
           </h5>
           <div
-            className="xs:text-xl xs:font-Camel-Regular xs:leading-[1.2] xs:tracking-normal xs:p-2  md:text-2xl
-            2xl:tracking-wider   xl:font-Camel-Medium lg:text-3xl text-[#063242] bg-white rounded-md md:p-4
+            className="xs:text-xl xs:font-Camel-Regular xs:leading-[1.2] xs:tracking-normal xs:py-2  md:text-2xl
+            2xl:tracking-wider   xl:font-Camel-Medium lg:text-3xl text-[#063242] bg-white rounded-md md:py-4
           "
           >
             {language === "ar"
