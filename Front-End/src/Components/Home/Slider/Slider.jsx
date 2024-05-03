@@ -55,7 +55,7 @@ export const Slider = (lang) => {
         showArrows={false}
         showThumbs={false}
         infiniteLoop={true}
-        // autoPlay={true}
+        autoPlay={true}
         showStatus={false}
         interval={3000}
         selectedItem={currentSlide}
