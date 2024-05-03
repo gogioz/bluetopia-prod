@@ -47,7 +47,7 @@ function Article(lang) {
           {language === "ar" ? titleTrans : title}
         </h1>
         <img
-          src={image}
+          src={`../${image}`}
           alt=""
           className="xs:w-[100%]  xl:w-[50%] xs:px-2 md:px-4"
         />

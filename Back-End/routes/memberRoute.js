@@ -9,7 +9,7 @@ const router = express.Router();
 // Set up Multer
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "../Front-End/src/assets/");
+    cb(null, "../Front-End/public/");
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);
@@ -35,9 +35,7 @@ router.post("/team", uploadImages, async (req, res) => {
       nameTrans,
       link,
     } = req.body;
-    const imageNames = req.files.map(
-      (image) => `/src/assets/${image.filename}`
-    );
+    const imageNames = req.files.map((image) => `${image.filename}`);
 
     const newMember = {
       title: title,
@@ -113,9 +111,7 @@ router.put("/team/:id", uploadImages, async (req, res) => {
       link,
     } = req.body;
 
-    const imageNames = req.files.map(
-      (image) => `/src/assets/${image.filename}`
-    );
+    const imageNames = req.files.map((image) => `${image.filename}`);
 
     const update = {
       $set: {

@@ -21,8 +21,12 @@ const AddNewPartner = () => {
         },
       })
       .then(() => {
-        navigate("/articles");
-        console.log(formData);
+        try {
+          navigate("/");
+          console.log(formData);
+        } catch (err) {
+          console.log(err);
+        }
       });
   };
 

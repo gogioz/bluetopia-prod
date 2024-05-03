@@ -15,6 +15,7 @@ function Activities() {
         console.log(err);
       });
   }, []);
+
   return (
     <div className="flex flex-col justify-center items-center mt-2 bg-[#063242]">
       <div className=" text-center my-6">
@@ -31,6 +32,7 @@ function Activities() {
                   key={article._id}
                 >
                   <div className="p-[10px] flex flex-col justify-between  space-y-1">
+                    <img src={`${article.image}`} alt="" />
                     <h3 className="m-0  text-3xl font-Camel-ExtraBold line-clamp-1">
                       {article.title}
                     </h3>
