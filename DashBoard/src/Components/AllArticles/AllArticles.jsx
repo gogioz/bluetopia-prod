@@ -7,7 +7,7 @@ function Activities() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/articles")
+      .get("https://services.bluetopia.org/articles")
       .then((res) => {
         setBooks(res.data.data);
       })

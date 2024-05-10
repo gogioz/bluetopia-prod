@@ -15,7 +15,7 @@ const AddNewPartner = () => {
 
     formData.append("logo", image);
     axios
-      .post("http://localhost:5000/sponsers", formData, {
+      .post("https://services.bluetopia.org/sponsers", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

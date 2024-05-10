@@ -20,7 +20,7 @@ function EditArticle() {
   //   console.log(image);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/articles/${id}`)
+      .get(`https://services.bluetopia.org/articles/${id}`)
       .then((res) => {
         console.log(res);
         setTitle(res.data.title);
@@ -46,7 +46,7 @@ function EditArticle() {
     formData.append("descriptionTrans", descriptionTrans);
     formData.append("image", image);
     axios
-      .put(`http://localhost:5000/articles/${id}`, formData)
+      .put(`https://services.bluetopia.org/articles/${id}`, formData)
       .then(() => {
         navigate("/");
       })

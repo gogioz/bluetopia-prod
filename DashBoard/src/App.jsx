@@ -19,7 +19,7 @@ export default function App() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/admins`)
+      .get(`https://services.bluetopia.org/admins`)
       .then((res) => {
         setUsers(res.data.data);
       })

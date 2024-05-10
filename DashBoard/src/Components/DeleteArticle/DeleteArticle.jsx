@@ -7,7 +7,7 @@ function DeleteBook() {
 
   const handleDeleteBook = () => {
     axios
-      .delete(`http://localhost:5000/articles/${id}`)
+      .delete(`https://services.bluetopia.org/articles/${id}`)
       .then(() => {
         navigate("/");
       })

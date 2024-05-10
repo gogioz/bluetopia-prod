@@ -27,7 +27,7 @@ function TeamMembers() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/team")
+      .get("https://services.bluetopia.org/team")
       .then((res) => {
         setTeam(res.data.data);
       })

@@ -27,7 +27,7 @@ const AddNewArticle = () => {
     formData.append("descriptionTrans", descriptionTrans);
     formData.append("image", image);
     axios
-      .post("http://localhost:5000/articles", formData, {
+      .post("https://services.bluetopia.org/articles", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

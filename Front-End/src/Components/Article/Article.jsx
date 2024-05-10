@@ -14,7 +14,7 @@ function Article(lang) {
   const { id } = useParams();
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/articles/${id}`)
+      .get(`https://services.bluetopia.org/articles/${id}`)
       .then((res) => {
         console.log(res);
         setTitle(res.data.title);

@@ -21,7 +21,7 @@ const EditMember = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/team/${id}`)
+      .get(`https://services.bluetopia.org/team/${id}`)
       .then((res) => {
         console.log(res);
         setTitle(res.data.title);
@@ -58,7 +58,7 @@ const EditMember = () => {
     });
 
     axios
-      .put(`http://localhost:5000/team/${id}`, formData)
+      .put(`https://services.bluetopia.org/team/${id}`, formData)
       .then(() => {
         navigate("/articles");
       })
